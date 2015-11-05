@@ -124,7 +124,7 @@
 		"maxResults": 20,
 		"designMaxResults": 10,
 		"operation": "read",
-		"startUpdate": false,
+		"startUpdate": true,
 		"autoUpdate": true,
 		"inFlightBehavior": "executeLast",
 		"transformationRequired": false,
@@ -287,7 +287,8 @@
 			"entityName": "Department",
 			"fullyQualifiedName": "com.testvcs_05nov.hrdb.Department",
 			"tableType": "TABLE"
-		}
+		},
+		"bindCount": 1
 	},
 	"HrdbEmployeeData": {
 		"type": "Employee",
@@ -308,7 +309,7 @@
 		"maxResults": 20,
 		"designMaxResults": 10,
 		"operation": "read",
-		"startUpdate": false,
+		"startUpdate": true,
 		"autoUpdate": true,
 		"inFlightBehavior": "executeLast",
 		"transformationRequired": false,
@@ -520,7 +521,8 @@
 							"precision": 19,
 							"generator": "identity",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"isRelatedPk": "true"
 						},
 						{
 							"fieldName": "name",
@@ -534,7 +536,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "budget",
@@ -548,7 +551,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "q1",
@@ -562,7 +566,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "q2",
@@ -576,7 +581,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "q3",
@@ -590,7 +596,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "q4",
@@ -604,7 +611,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "deptcode",
@@ -618,7 +626,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "location",
@@ -632,7 +641,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "tenantid",
@@ -646,11 +656,13 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						}
 					],
 					"relatedFieldName": "department.deptid",
-					"isList": false
+					"isList": false,
+					"disableInlineEditing": "true"
 				},
 				{
 					"fieldName": "username",
@@ -722,7 +734,8 @@
 							"precision": 19,
 							"generator": "identity",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"isRelatedPk": "true"
 						},
 						{
 							"fieldName": "firstname",
@@ -736,7 +749,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "lastname",
@@ -750,7 +764,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "street",
@@ -764,7 +779,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "city",
@@ -778,7 +794,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "state",
@@ -792,7 +809,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "zip",
@@ -806,7 +824,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "birthdate",
@@ -820,7 +839,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "picurl",
@@ -834,7 +854,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "jobtitle",
@@ -848,7 +869,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "department",
@@ -878,7 +900,8 @@
 									"precision": 19,
 									"generator": "identity",
 									"isRelated": false,
-									"defaultValue": null
+									"defaultValue": null,
+									"isRelatedPk": "true"
 								},
 								{
 									"fieldName": "name",
@@ -892,7 +915,8 @@
 									"precision": 19,
 									"generator": "assigned",
 									"isRelated": false,
-									"defaultValue": null
+									"defaultValue": null,
+									"disableInlineEditing": "true"
 								},
 								{
 									"fieldName": "budget",
@@ -906,7 +930,8 @@
 									"precision": 19,
 									"generator": "assigned",
 									"isRelated": false,
-									"defaultValue": null
+									"defaultValue": null,
+									"disableInlineEditing": "true"
 								},
 								{
 									"fieldName": "q1",
@@ -920,7 +945,8 @@
 									"precision": 19,
 									"generator": "assigned",
 									"isRelated": false,
-									"defaultValue": null
+									"defaultValue": null,
+									"disableInlineEditing": "true"
 								},
 								{
 									"fieldName": "q2",
@@ -934,7 +960,8 @@
 									"precision": 19,
 									"generator": "assigned",
 									"isRelated": false,
-									"defaultValue": null
+									"defaultValue": null,
+									"disableInlineEditing": "true"
 								},
 								{
 									"fieldName": "q3",
@@ -948,7 +975,8 @@
 									"precision": 19,
 									"generator": "assigned",
 									"isRelated": false,
-									"defaultValue": null
+									"defaultValue": null,
+									"disableInlineEditing": "true"
 								},
 								{
 									"fieldName": "q4",
@@ -962,7 +990,8 @@
 									"precision": 19,
 									"generator": "assigned",
 									"isRelated": false,
-									"defaultValue": null
+									"defaultValue": null,
+									"disableInlineEditing": "true"
 								},
 								{
 									"fieldName": "deptcode",
@@ -976,7 +1005,8 @@
 									"precision": 19,
 									"generator": "assigned",
 									"isRelated": false,
-									"defaultValue": null
+									"defaultValue": null,
+									"disableInlineEditing": "true"
 								},
 								{
 									"fieldName": "location",
@@ -990,7 +1020,8 @@
 									"precision": 19,
 									"generator": "assigned",
 									"isRelated": false,
-									"defaultValue": null
+									"defaultValue": null,
+									"disableInlineEditing": "true"
 								},
 								{
 									"fieldName": "tenantid",
@@ -1004,11 +1035,13 @@
 									"precision": 19,
 									"generator": "assigned",
 									"isRelated": false,
-									"defaultValue": null
+									"defaultValue": null,
+									"disableInlineEditing": "true"
 								}
 							],
 							"relatedFieldName": "department.deptid",
-							"isList": false
+							"isList": false,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "username",
@@ -1022,7 +1055,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "password",
@@ -1036,7 +1070,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "role",
@@ -1050,7 +1085,8 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "employeeByManagerid",
@@ -1066,7 +1102,8 @@
 							"isRelated": true,
 							"defaultValue": null,
 							"relatedTableName": "EMPLOYEE",
-							"relatedEntityName": "Employee"
+							"relatedEntityName": "Employee",
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "tenantid",
@@ -1080,10 +1117,12 @@
 							"precision": 19,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						}
 					],
-					"relatedFieldName": "employeeByManagerid.eid"
+					"relatedFieldName": "employeeByManagerid.eid",
+					"disableInlineEditing": "true"
 				},
 				{
 					"fieldName": "tenantid",
@@ -1106,7 +1145,8 @@
 			"entityName": "Employee",
 			"fullyQualifiedName": "com.testvcs_05nov.hrdb.Employee",
 			"tableType": "TABLE"
-		}
+		},
+		"bindCount": 1
 	},
 	"HrdbUserData": {
 		"type": "User",
@@ -1127,7 +1167,7 @@
 		"maxResults": 20,
 		"designMaxResults": 10,
 		"operation": "read",
-		"startUpdate": false,
+		"startUpdate": true,
 		"autoUpdate": true,
 		"inFlightBehavior": "executeLast",
 		"transformationRequired": false,
@@ -1220,7 +1260,8 @@
 			"entityName": "User",
 			"fullyQualifiedName": "com.testvcs_05nov.hrdb.User",
 			"tableType": "TABLE"
-		}
+		},
+		"bindCount": 2
 	},
 	"HrdbVacationData": {
 		"type": "Vacation",
@@ -1605,5 +1646,56 @@
 			"fullyQualifiedName": "com.testvcs_05nov.hrdb.Vacation",
 			"tableType": "TABLE"
 		}
+	},
+	"HrdbExecuteQueryonEmployeeTab": {
+		"type": "hrdbQueryonEmployeeTabrtnType",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"name": "dataBinding",
+				"type": "object",
+				"fields": []
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"service": "hrdb",
+		"operation": "executeQueryonEmployeeTab",
+		"startUpdate": false,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"serviceType": "DataService",
+		"category": "wm.ServiceVariable",
+		"isDefault": true,
+		"wmServiceOperationInfo": {
+			"methodType": "get",
+			"name": "executeQueryonEmployeeTab",
+			"relativePath": "/hrdb/queryExecutor/queries/QueryonEmployeeTab",
+			"parameters": [
+				{
+					"name": "page",
+					"parameterType": "query",
+					"type": "integer"
+				},
+				{
+					"name": "size",
+					"parameterType": "query",
+					"type": "integer"
+				},
+				{
+					"name": "sort",
+					"parameterType": "query",
+					"type": "string"
+				}
+			]
+		},
+		"_id": "wm-HrdbExecuteQueryonEmployeeTab-wm.ServiceVariable-1446722881194"
 	}
 }

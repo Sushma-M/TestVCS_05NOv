@@ -1,7 +1,3 @@
-/*Copyright (c) 2015-2016 vcs1.com All Rights Reserved.
- This software is the confidential and proprietary information of vcs1.com You shall not disclose such Confidential Information and shall use it only in accordance
- with the terms of the source code license agreement you entered into with vcs1.com*/
-
 
 package com.testvcs_05nov.hrdb.service;
 
@@ -33,6 +29,13 @@ public class HrdbQueryExecutorServiceImpl implements HrdbQueryExecutorService {
 	@Qualifier("hrdbWMQueryExecutor")
 	private WMQueryExecutor queryExecutor;
 
+	@Transactional(value = "hrdbTransactionManager")
+	@Override
+	public Page<Object> executeQueryonEmployeeTab(Pageable pageable)
+	throws QueryParameterMismatchException{
+        Map<String, Object> params = new HashMap<String, Object>();
+        return queryExecutor.executeNamedQuery("QueryonEmployeeTab", params, pageable);
+	}
 
 	@Transactional(value = "hrdbTransactionManager")
 	@Override
